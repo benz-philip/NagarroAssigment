@@ -19,3 +19,4 @@ QA Automation assigment
 7. Open file 'pathToProjectRootFolder/NagarroAssigment/src/test/resources/features' and tag the scenarios with tag '@Regression' which are required to be executed
 8. Once all of the above is done, under the project root folder execute the commmand 'mvn install' for first time and then 'mvn clean test' for every subsequent test
 9. The reports after every execution can be viewed at URL: 'pathToProjectRootFolder/NagarroAssigment/target/cucumber-reports/report.html'
+10. One sample report can be viewed at 'NagarroAssigment/report/779455/report.html'.
