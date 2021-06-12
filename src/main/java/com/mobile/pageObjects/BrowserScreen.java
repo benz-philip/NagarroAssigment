@@ -10,7 +10,7 @@ import com.framework.actions.UserActions;
 public class BrowserScreen {
 	UserActions actions;
 	final String contextWeb = "WEBVIEW";
-	final String contextNative = "NATIVE";
+	final String contextNative = "NATIVE_APP";
 
 	public BrowserScreen(UserActions actions) {
 		this.actions = actions;
@@ -100,6 +100,8 @@ public class BrowserScreen {
 		} catch (Exception e) {
 			e.printStackTrace();
 			Reporter.addStepLog("Exception while verifying the name and car displayed");
+		} finally {
+			actions.switchContext(contextNative);
 		}
 		return flag;
 	}
